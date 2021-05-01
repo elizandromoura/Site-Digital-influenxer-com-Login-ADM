@@ -57,21 +57,16 @@ fclose($arquivo);
     <main class="principal">
      
       <section class="conteudo">  
-        <div>
+      <div>
           <h1>Patrocinadores</h1>
-           <?php
+            <?php
             foreach ($patron as $patrocina) { ?>
-              <p> <?=$patrocina?></p>
+              <p> <?=$patrocina;?></p>
 
 
-            <? } ?>
-           
-           
-           
-           
-
-
-        </div>  
+            <?php } ?>
+              
+        </div> 
 
 
       </section><!--fim conteudo-->
