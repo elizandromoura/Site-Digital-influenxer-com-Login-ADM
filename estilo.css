@@ -74,6 +74,8 @@
   padding-bottom: 5px;
 }
 
+/*aviso tela de login*/
+.logininvalido{ padding: 5px; color: red;}
 
 
 /*Responsividade*/

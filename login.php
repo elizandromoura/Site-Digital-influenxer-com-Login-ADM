@@ -32,12 +32,39 @@
      
       <section>  
 
-        <form action="">
+        <form action="valida_login.php" method="post">
             <div class="login">
                 <h1 class="titulologin">Login Adm</h1>
                 <input type="email" name="email" id="emailadm" placeholder="Email"> <br> <br>
-                <input type="password" name="senha" id="senhaadm" placeholder="Senha"> <br> <br>
-                <input type="button" value="Logar">
+                <input type="password" name="senha" id="senhaadm" placeholder="Senha"> <br> 
+                <!-- Inicio cod PHP mostra mensagem de erro se os dados forem invalidos -->
+                <?php
+                  if (isset($_GET['login']) && $_GET['login'] == 'erro') {
+                
+                ?>
+
+                <div class="logininvalido">
+                Email ou senha invalido.
+                    
+                </div> 
+
+                <?php } ?>
+
+                <?php
+                  if (isset($_GET['login']) && $_GET['login'] == 'erro2') {
+                
+                ?>
+
+                <div class="logininvalido">
+                Faça Login para continuar.
+                    
+                </div> 
+
+                <?php } ?>
+
+                <!-- Fim cod PHP -->
+                
+                <button class="btlogin" type="submit">Entrar</button>
             </div>
         </form>
 
