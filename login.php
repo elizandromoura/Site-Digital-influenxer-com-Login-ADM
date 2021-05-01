@@ -32,14 +32,14 @@
      
       <section>  
 
-        
+        <form action="">
             <div class="login">
                 <h1 class="titulologin">Login Adm</h1>
                 <input type="email" name="email" id="emailadm" placeholder="Email"> <br> <br>
                 <input type="password" name="senha" id="senhaadm" placeholder="Senha"> <br> <br>
-                <input type="submit" value="logar">
+                <input type="button" value="Logar">
             </div>
-
+        </form>
 
        
 
