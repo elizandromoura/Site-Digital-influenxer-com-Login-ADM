@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="estilo.css">
 
-    <title>Thais Xavier Oficial</title>
+    <title>Login Adm</title>
     <link rel="stylesheet" href="estilo.css">
     <link rel="shortcut icon" href="imagens2/heart_crown_princess_emoji_emo_icon_131636.ico" type="image/x-icon">
 
