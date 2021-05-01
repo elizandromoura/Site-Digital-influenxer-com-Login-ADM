@@ -61,7 +61,7 @@ fclose($arquivo);
           <h1>Patrocinadores</h1>
             <?php
             foreach ($patron as $patrocina) { ?>
-              <p> <?=$patrocina;?></p>
+              <p> <img class="imgpatrocinadores" src="imagens2/media_social_tiktok_icon_124256.ico" alt="tiktok"> <?=$patrocina;?></p>
 
 
             <?php } ?>

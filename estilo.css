@@ -77,6 +77,9 @@
 /*aviso tela de login*/
 .logininvalido{ padding: 5px; color: red;}
 
+.imgpatrocinadores {
+  width: 20px;
+}
 
 /*Responsividade*/
 @media screen and (max-width: 768px){
