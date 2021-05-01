@@ -1,3 +1,18 @@
+<?php
+
+$patron = array();
+//Abrir arquivo.hd
+$arquivo = fopen('arquivo.hd', 'r');
+
+while (!feof($arquivo)) {
+  $registro = fgets($arquivo);
+  $patron[] = $registro;
+}
+//Fechar arquivo
+fclose($arquivo);
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -7,7 +22,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="estilo.css">
 
-    <title>Thais Xavier Oficial</title>
+    <title>Patrocinadores</title>
     <link rel="stylesheet" href="estilo.css">
     <link rel="shortcut icon" href="imagens2/heart_crown_princess_emoji_emo_icon_131636.ico" type="image/x-icon">
 
@@ -43,9 +58,19 @@
      
       <section class="conteudo">  
         <div>
-          <h1>Contato:</h1>
-           <a href="https://www.instagram.com/xsiaht.2020/" target="_blank" rel="external"><img src="imagens2/instagram_108043.ico" alt="" class="contato"></a>
-           <a href="https://www.tiktok.com/@thais.xavier101?" target="_blank" rel="external"><img src="imagens2/media_social_tiktok_icon_124256.ico" alt="" class="contato"></a>
+          <h1>Patrocinadores</h1>
+           <?php
+            foreach ($patron as $patrocina) { ?>
+              <p> <?=$patrocina?></p>
+
+
+            <? } ?>
+           
+           
+           
+           
+
+
         </div>  
 
 
